@@ -30,7 +30,7 @@ whatsappForm?.addEventListener("submit", (event) => {
   const mensagem = data.get("mensagem")?.toString().trim();
 
   const text = [
-    "Olá, Ademilson Melo. Tenho interesse na Mentoria Perícia Judicial.",
+    "Olá, Ademilson Melo. Tenho interesse na promoção de R$ 89,90 para conhecer e entender melhor a área de Perícia Judicial.",
     "",
     `Nome: ${nome}`,
     `Profissão: ${profissao}`,
