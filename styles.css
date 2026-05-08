@@ -86,6 +86,7 @@ li,
 }
 
 .hero-card,
+.hotmart-card,
 .split-card,
 .about-card,
 .warning-card,
@@ -458,6 +459,7 @@ h3 {
 }
 
 .hero-card,
+.hotmart-card,
 .split-card,
 .about-card,
 .warning-card,
@@ -544,6 +546,147 @@ h3 {
 
 .split-card .btn {
   margin-top: 16px;
+}
+
+.hotmart-product {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 18%, rgba(243, 209, 136, 0.14), transparent 30%),
+    radial-gradient(circle at 86% 72%, rgba(215, 168, 75, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.98), rgba(17, 16, 13, 0.96));
+}
+
+.hotmart-product::before {
+  content: "";
+  position: absolute;
+  inset: 34px;
+  border: 1px solid rgba(215, 168, 75, 0.18);
+  border-radius: 34px;
+  pointer-events: none;
+}
+
+.hotmart-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: 44px;
+  align-items: center;
+}
+
+.hotmart-content {
+  max-width: 620px;
+}
+
+.hotmart-subtitle {
+  color: var(--gold-light) !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hotmart-audience-title {
+  margin: 24px 0 10px;
+  color: var(--gold-light) !important;
+  font-weight: 900;
+}
+
+.hotmart-audience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hotmart-audience span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid rgba(215, 168, 75, 0.35);
+  border-radius: 999px;
+  color: var(--cream);
+  background: rgba(5, 5, 5, 0.48);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.hotmart-card {
+  position: relative;
+  padding: 38px;
+  border-radius: 30px;
+  background:
+    linear-gradient(145deg, rgba(27, 23, 15, 0.98), rgba(5, 5, 5, 0.96)) !important;
+  box-shadow:
+    0 30px 86px rgba(0, 0, 0, 0.64),
+    0 0 42px rgba(215, 168, 75, 0.18) !important;
+}
+
+.hotmart-card::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(243, 209, 136, 0.18);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.hotmart-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hotmart-card h3 {
+  margin-bottom: 22px;
+  color: var(--gold-light) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.hotmart-price {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 24px;
+  padding: 22px;
+  border: 1px solid rgba(215, 168, 75, 0.38);
+  border-radius: 20px;
+  background: rgba(215, 168, 75, 0.1);
+}
+
+.hotmart-price strong {
+  color: var(--gold-light);
+  font-size: clamp(2rem, 4.5vw, 3.3rem);
+  line-height: 1;
+}
+
+.hotmart-price span {
+  color: rgba(246, 239, 226, 0.82);
+  font-weight: 800;
+}
+
+.hotmart-card-intro {
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.hotmart-list {
+  gap: 14px;
+}
+
+.hotmart-actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hotmart-note {
+  margin: 24px 0 0;
+  padding: 18px;
+  border-left: 4px solid var(--gold);
+  border-radius: 14px;
+  background: rgba(215, 168, 75, 0.08);
+  font-size: 0.92rem;
 }
 
 .section-heading {
@@ -867,6 +1010,7 @@ textarea:focus {
   }
 
   .hero-grid,
+  .hotmart-grid,
   .split-card,
   .two-columns,
   .about-card,
@@ -916,11 +1060,13 @@ textarea:focus {
   }
 
   .hero-actions,
+  .hotmart-actions,
   .btn {
     width: 100%;
   }
 
   .hero-card,
+  .hotmart-card,
   .split-card,
   .about-card,
   .warning-card,
