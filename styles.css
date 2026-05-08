@@ -428,8 +428,38 @@ h3 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 14px;
   margin-top: 34px;
+}
+
+.secure-payment,
+.installment-highlight {
+  color: var(--gold-light);
+  font-weight: 800;
+}
+
+.secure-payment {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.secure-payment::before {
+  content: "✓";
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(215, 168, 75, 0.16);
+  color: var(--gold-light);
+}
+
+.installment-highlight {
+  margin-top: -10px;
+  font-size: 1.05rem;
 }
 
 .hero-side {
@@ -1201,7 +1231,8 @@ textarea:focus {
   .hero-actions,
   .hotmart-actions,
   .hero-actions .btn,
-  .hotmart-actions .btn {
+  .hotmart-actions .btn,
+  .secure-payment {
     width: 100%;
   }
 
