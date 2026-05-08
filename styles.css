@@ -1,4 +1,147 @@
+/* TEMA PREMIUM PRETO E DOURADO - MENTORIA PERÍCIA JUDICIAL */
+
 :root {
+  --gold: #d7a84b;
+  --gold-light: #f3d188;
+  --black: #050505;
+  --black-soft: #11100d;
+  --cream: #f6efe2;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(215, 168, 75, 0.18), transparent 35%),
+    radial-gradient(circle at left top, rgba(215, 168, 75, 0.10), transparent 28%),
+    linear-gradient(180deg, #050505 0%, #0b0b0b 50%, #050505 100%) !important;
+  color: var(--cream) !important;
+}
+
+.site-header,
+.header {
+  background: rgba(5, 5, 5, 0.95) !important;
+  border-bottom: 1px solid rgba(215, 168, 75, 0.45) !important;
+}
+
+.brand,
+.nav-links a,
+.menu a {
+  color: var(--cream) !important;
+}
+
+.brand-mark {
+  background: transparent !important;
+  color: var(--gold-light) !important;
+  border: 1px solid var(--gold) !important;
+  box-shadow: 0 0 25px rgba(215, 168, 75, 0.25) !important;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at right, rgba(215, 168, 75, 0.22), transparent 35%),
+    linear-gradient(135deg, #050505, #11100d, #050505) !important;
+  color: var(--cream) !important;
+}
+
+.hero::before {
+  background: linear-gradient(120deg, transparent, rgba(215, 168, 75, 0.22), transparent) !important;
+}
+
+.hero h1,
+h1 {
+  color: var(--gold-light) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+}
+
+h2 {
+  color: var(--gold-light) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  text-transform: uppercase !important;
+}
+
+h3 {
+  color: var(--gold) !important;
+}
+
+p,
+li,
+.hero-subtitle,
+.section-heading p,
+.feature-card p,
+.about-card p,
+.warning-card p,
+.contact-grid p,
+.faq p,
+.cta-card p {
+  color: rgba(246, 239, 226, 0.86) !important;
+}
+
+.eyebrow,
+.section-label,
+.kicker {
+  color: var(--gold-light) !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+}
+
+.hero-card,
+.split-card,
+.about-card,
+.warning-card,
+.cta-card,
+.contact-form,
+.feature-card,
+.mini-card,
+.card,
+details {
+  background: linear-gradient(145deg, rgba(20, 18, 14, 0.96), rgba(5, 5, 5, 0.94)) !important;
+  border: 1px solid rgba(215, 168, 75, 0.45) !important;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55) !important;
+}
+
+.btn,
+.btn-primary,
+.btn-small,
+.btn--primary,
+.btn--whatsapp {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), #8b6423) !important;
+  color: #130e05 !important;
+  border: 1px solid var(--gold-light) !important;
+  box-shadow: 0 14px 36px rgba(215, 168, 75, 0.32) !important;
+}
+
+.btn-secondary,
+.btn--ghost {
+  background: transparent !important;
+  color: var(--gold-light) !important;
+  border: 1px solid rgba(215, 168, 75, 0.55) !important;
+}
+
+.floating-whatsapp {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), #8b6423) !important;
+  color: #130e05 !important;
+  border: 1px solid var(--gold-light) !important;
+}
+
+.site-footer,
+.footer {
+  background: #030303 !important;
+  border-top: 1px solid rgba(215, 168, 75, 0.45) !important;
+  color: var(--cream) !important;
+}
+
+input,
+textarea {
+  background: rgba(5, 5, 5, 0.75) !important;
+  color: var(--cream) !important;
+  border: 1px solid rgba(215, 168, 75, 0.35) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(246, 239, 226, 0.45) !important;
+}:root {
   --blue-950: #071f35;
   --blue-900: #0a2f4f;
   --blue-800: #0d426b;
