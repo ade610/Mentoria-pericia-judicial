@@ -30,7 +30,7 @@ whatsappForm?.addEventListener("submit", (event) => {
   const mensagem = data.get("mensagem")?.toString().trim();
 
   const text = [
-    "Olá, Ademilson Melo. Tenho interesse na promoção de R$ 89,90 para conhecer e entender melhor a área de Perícia Judicial.",
+    "Olá, Ademilson Melo. Tenho interesse no e-book Perito Judicial na Prática: Guia Completo para Iniciantes, disponível na Hotmart por R$ 39,99 à vista ou 5x de R$ 8,85.",
     "",
     `Nome: ${nome}`,
     `Profissão: ${profissao}`,
